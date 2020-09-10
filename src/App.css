@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/colorsbysami.appspot.com/o/static%2Fbg.svg?alt=media&token=977b04b4-959a-4661-ba9e-da8d38d77b23);
+    background-color: #3335b6;
+    overflow-x: hidden;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+}
+
+.no-scrollbar {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+.app {
+    min-height: 100vh;
+}
+
+.app__nav,
+.colors {
+    margin: 0 auto;
+    padding: 1% 0;
+    max-width: 1200px;
+}
+
+@media (max-width: 1199.98px) {
+    .colors,
+    .app__nav {
+        padding: 1% 20px !important;
+    }
+}
+@media (max-width: 990px) {
+    body {
+        overflow-y: scroll !important;
+    }
+}
+
+.app__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app__nav h1 {
+    padding: 30px 0px;
+    color: white;
+}
